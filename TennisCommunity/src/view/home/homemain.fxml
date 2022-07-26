@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.home.Homemain">
+   <children>
+      <ImageView fx:id="mainimg" fitHeight="354.0" fitWidth="1280.0" layoutY="14.0" onMouseClicked="#maininfo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/배너1.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="153.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="자유게시판">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="654.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="대회정보">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="253.0" layoutY="430.0" startX="-100.0" stroke="#008d09" />
+      <Line endX="100.0" layoutX="754.0" layoutY="426.0" startX="-100.0" stroke="#008d09" />
+      <TableView fx:id="boardtable" layoutX="153.0" layoutY="447.0" prefHeight="119.0" prefWidth="409.0" style="-fx-background-color: #00ff0000; -fx-border-color: #00ff0000;">
+        <columns>
+          <TableColumn prefWidth="75.0" text="번호" />
+          <TableColumn prefWidth="186.0" text="제목" />
+            <TableColumn prefWidth="147.0" text="작성일" />
+        </columns>
+      </TableView>
+      <TableView fx:id="ctable" layoutX="654.0" layoutY="444.0" prefHeight="119.0" prefWidth="448.0" style="-fx-background-color: #00ff0000; -fx-border-color: #00ff0000;">
+        <columns>
+          <TableColumn prefWidth="75.0" text="번호" />
+          <TableColumn prefWidth="223.0" text="대회명" />
+            <TableColumn minWidth="0.0" prefWidth="149.0" text="대회날짜" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

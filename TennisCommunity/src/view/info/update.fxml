@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1280.0" style="-fx-background-color: #00ff0000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.info.Update">
+   <children>
+      <Label layoutX="614.0" layoutY="69.0" prefHeight="24.0" prefWidth="80.0" text="회원수정">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="91.0" layoutX="617.0" layoutY="99.0" startX="-28.0" stroke="#138d00" />
+      <Label layoutX="494.0" layoutY="282.0" text="이메일">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="494.0" layoutY="232.0" text="이름">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <TextField fx:id="txtemail" layoutX="632.0" layoutY="282.0" onMouseClicked="#clear2" />
+      <TextField fx:id="txtmname" layoutX="632.0" layoutY="232.0" onMouseClicked="#clear1" />
+      <Button fx:id="btnupdate" layoutX="503.0" layoutY="451.0" mnemonicParsing="false" onAction="#update" prefHeight="38.0" prefWidth="138.0" style="-fx-background-color: #138d00;" text="수정완료" textFill="WHITE" />
+      <Label layoutX="494.0" layoutY="382.0" text="변경할비밀번호">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="494.0" layoutY="182.0" text="현재비밀번호">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Button fx:id="btnmpwconfirm" layoutX="782.0" layoutY="182.0" mnemonicParsing="false" onAction="#pwconfirm" prefHeight="23.0" prefWidth="60.0" style="-fx-background-color: #138d00;" text="확인" textFill="WHITE" />
+      <Button fx:id="btnback" layoutX="661.0" layoutY="451.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="138.0" style="-fx-background-color: #138d00;" text="뒤로가기" textFill="WHITE" />
+      <Label layoutX="494.0" layoutY="332.0" text="전화번호">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtphone" layoutX="632.0" layoutY="332.0" onMouseClicked="#clear3" />
+      <PasswordField fx:id="txtmpassword" layoutX="632.0" layoutY="182.0" />
+      <PasswordField fx:id="txtpwupdate" layoutX="632.0" layoutY="382.0" onMouseClicked="#clear4" />
+      <ImageView fitHeight="54.0" fitWidth="51.0" layoutX="549.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/my_icon_on_01.png" />
+         </image>
+      </ImageView>
+      <Line endX="-93.0" layoutX="564.0" layoutY="193.0" startX="-100.0" stroke="#138d00" strokeWidth="5.0" />
+      <Line endX="-93.0" layoutX="564.0" layoutY="243.0" startX="-100.0" stroke="#138d00" strokeWidth="5.0" />
+      <Line endX="-93.0" layoutX="564.0" layoutY="293.0" startX="-100.0" stroke="#138d00" strokeWidth="5.0" />
+      <Line endX="-93.0" layoutX="564.0" layoutY="343.0" startX="-100.0" stroke="#138d00" strokeWidth="5.0" />
+      <Line endX="-93.0" layoutX="564.0" layoutY="393.0" startX="-100.0" stroke="#138d00" strokeWidth="5.0" />
+   </children>
+</AnchorPane>

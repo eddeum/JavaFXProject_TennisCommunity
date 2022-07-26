@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.competition.Competitionaddranking">
+   <children>
+      <Label layoutX="57.0" layoutY="44.0" prefHeight="24.0" prefWidth="105.0" text="순위입력">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnadd" layoutX="820.0" layoutY="249.0" mnemonicParsing="false" onAction="#add" prefHeight="24.0" prefWidth="254.0" style="-fx-background-color: #138d00;" text="입력" textFill="WHITE" />
+      <TextField fx:id="txtscore" layoutX="820.0" layoutY="204.0" prefHeight="24.0" prefWidth="254.0" />
+      <Button fx:id="btnback" layoutX="969.0" layoutY="559.0" mnemonicParsing="false" onAction="#back" prefHeight="24.0" prefWidth="105.0" style="-fx-background-color: #138d00;" text="뒤로가기" textFill="WHITE" />
+      <Label fx:id="recordnum" layoutX="766.0" layoutY="208.0" text="순위" />
+      <TableView fx:id="entrytable" layoutX="93.0" layoutY="117.0" prefHeight="426.0" prefWidth="567.0" style="-fx-background-color: #00ff0000; -fx-border-color: #00ff0000;">
+        <columns>
+          <TableColumn prefWidth="67.0" text="번호" />
+          <TableColumn prefWidth="188.0" text="참가자" />
+            <TableColumn prefWidth="311.0" text="순위" />
+        </columns>
+      </TableView>
+      <Line endX="2.0" endY="1.52587890625E-5" layoutX="158.0" layoutY="80.0" startX="-100.0" stroke="#138d00" />
+   </children>
+</AnchorPane>

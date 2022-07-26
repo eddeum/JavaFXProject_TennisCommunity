@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.booking.Bookingpay">
+   <children>
+      <Label fx:id="lblfee" layoutX="460.0" layoutY="90.0" prefHeight="60.0" prefWidth="250.0" text="이용요금 : 100000000 원">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="lblpoint" layoutX="460.0" layoutY="150.0" prefHeight="60.0" prefWidth="250.0" text="현재포인트 : 1000000 저ㅓㅁ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="460.0" layoutY="225.0" prefHeight="60.0" prefWidth="82.0" text="포인트사용 : ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtpoint" layoutX="544.0" layoutY="244.0" prefHeight="31.0" prefWidth="167.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label fx:id="lblconfirm" layoutX="544.0" layoutY="285.0" prefHeight="31.0" prefWidth="167.0" textFill="RED">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button fx:id="btnpoint" layoutX="733.0" layoutY="244.0" mnemonicParsing="false" onAction="#point" prefHeight="40.0" prefWidth="80.0" text="사용">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label fx:id="lblamount" layoutX="460.0" layoutY="332.0" prefHeight="60.0" prefWidth="250.0" text="결제금액 : 0-000000 원">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="460.0" layoutY="407.0" prefHeight="60.0" prefWidth="82.0" text="현금결제 : ">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtcash" layoutX="544.0" layoutY="422.0" prefHeight="31.0" prefWidth="167.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button fx:id="btnpay" layoutX="900.0" layoutY="520.0" mnemonicParsing="false" onAction="#pay" prefHeight="40.0" prefWidth="150.0" text="결제하기">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label fx:id="lblpay" layoutX="60.0" layoutY="40.0" prefHeight="50.0" prefWidth="150.0" text="결제하기">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="btnback" layoutX="1075.0" layoutY="520.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="150.0" text="뒤로가기">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

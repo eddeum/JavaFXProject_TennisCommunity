@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.competition.Competition">
+   <children>
+      <Text layoutX="103.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="대회" wrappingWidth="93.12109375">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Button fx:id="btncompetition" layoutX="1035.0" layoutY="42.0" mnemonicParsing="false" onAction="#addcompetition" prefHeight="39.0" prefWidth="169.0" style="-fx-background-color: #138d00;" text="대회등록" textFill="WHITE" />
+      <ScrollPane fx:id="scrollpane" layoutX="72.0" layoutY="104.0" prefHeight="459.0" prefWidth="1137.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="458.0" prefWidth="1135.0" />
+         </content>
+      </ScrollPane>
+      <Line endX="39.0" layoutX="173.0" layoutY="67.0" startX="-100.0" stroke="#138d00" />
+      <ImageView fitHeight="48.0" fitWidth="33.0" layoutX="66.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/thr.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

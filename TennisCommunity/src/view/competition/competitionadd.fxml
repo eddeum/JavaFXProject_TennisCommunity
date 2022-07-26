@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.competition.Competitionadd">
+   <children>
+      <Label layoutX="57.0" layoutY="55.0" prefHeight="24.0" prefWidth="105.0" text="대회등록">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnadd" layoutX="887.0" layoutY="544.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #138d00;" text="등록 " textFill="WHITE" />
+      <TextField fx:id="txtcname" layoutX="206.0" layoutY="141.0" prefHeight="24.0" prefWidth="348.0" />
+      <TextField fx:id="txtcprice" layoutX="206.0" layoutY="218.0" prefHeight="24.0" prefWidth="348.0" />
+      <Button fx:id="btnimg" layoutX="206.0" layoutY="272.0" mnemonicParsing="false" onAction="#imgadd" prefHeight="24.0" prefWidth="348.0" style="-fx-background-color: #138d00;" text="이미지등록" textFill="WHITE" />
+      <ImageView fx:id="img" fitHeight="141.0" fitWidth="880.0" layoutX="218.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnback" layoutX="1005.0" layoutY="544.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #138d00;" text="취소" textFill="WHITE" />
+      <Label layoutX="148.0" layoutY="223.0" text="참가비" />
+      <Label layoutX="166.0" layoutY="146.0" text="제목" />
+      <Label fx:id="txtpath" layoutX="160.0" layoutY="324.0" prefHeight="15.0" prefWidth="400.0" text="이미지경로:  " />
+      <Label layoutX="154.0" layoutY="355.0" text="이미지미리보기" />
+      <Label layoutX="704.0" layoutY="270.0" text="날짜" />
+      <DatePicker fx:id="txtcdate" layoutX="756.0" layoutY="266.0" />
+      <RadioButton fx:id="opt1" layoutX="1001.0" layoutY="254.0" mnemonicParsing="false" text="6-8PM">
+         <toggleGroup>
+            <ToggleGroup fx:id="timecategory" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="opt2" layoutX="998.0" layoutY="284.0" mnemonicParsing="false" text="8-10PM" toggleGroup="$timecategory" />
+      <Label layoutX="957.0" layoutY="271.0" text="시간" />
+      <Label layoutX="142.0" layoutY="183.0" text="참가인원" />
+      <TextField fx:id="txtccount" layoutX="206.0" layoutY="179.0" prefHeight="24.0" prefWidth="348.0" />
+      <Label layoutX="694.0" layoutY="145.0" text="1위상금" />
+      <TextField fx:id="txtcreward1" layoutX="756.0" layoutY="141.0" prefHeight="24.0" prefWidth="348.0" />
+      <Label layoutX="694.0" layoutY="184.0" text="2위상금" />
+      <TextField fx:id="txtcreward2" layoutX="756.0" layoutY="179.0" prefHeight="24.0" prefWidth="348.0" />
+      <Label layoutX="694.0" layoutY="223.0" text="3위상금" />
+      <TextField fx:id="txtcreward3" layoutX="756.0" layoutY="218.0" prefHeight="24.0" prefWidth="348.0" />
+      <Line endX="2.0" endY="1.52587890625E-5" layoutX="158.0" layoutY="89.0" startX="-100.0" stroke="#138d00" />
+   </children>
+</AnchorPane>

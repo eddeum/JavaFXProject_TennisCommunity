@@ -1,0 +1,31 @@
+#btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn9, #btn10, #btn11, #btn12, #btn13, #btn14, #btn16, #btn17, #btn18, #btn19, #btn20, #btn21, #btn23, #btn24, #btn25, #btn26, #btn27, #btn28, #btn30, #btn31, #btn32, #btn33, #btn34, #btn35, #btn37, #btn38, #btn39, #btn40, #btn41, #btn42{
+		-fx-background-color: #00ff0000 ;
+}
+
+#btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover, #btn6:hover, #btn7:hover, #btn9:hover, #btn10:hover, #btn11:hover, #btn12:hover, #btn13:hover, #btn14:hover, #btn16:hover, #btn17:hover, #btn18:hover, #btn19:hover, #btn20:hover, #btn21:hover, #btn23:hover, #btn24:hover, #btn25:hover, #btn26:hover, #btn27:hover, #btn28:hover, #btn30:hover, #btn31:hover, #btn32:hover, #btn33:hover, #btn34:hover, #btn35:hover, #btn37:hover, #btn38:hover, #btn39:hover, #btn40:hover, #btn41:hover, #btn42:hover{
+		-fx-background-color: gray ;
+}
+
+
+#btn1, #btn8, #btn15, #btn22, #btn29, #btn36{
+	-fx-background-color: #eeeeee ;
+}
+
+#btn1:hover, #btn8:hover, #btn15:hover, #btn22:hover, #btn29:hover, #btn36:hover{
+	-fx-background-color: gray ;
+}
+
+#test{
+	-fx-background-color: #00ff0000 ;
+	-fx-border-radius : 15px;
+}
+
+#test:hover{
+	-fx-background-color: gray ;
+}
+
+
+*{
+	-fx-font-family : "twayair" ;
+	/*-fx-font-size : 16;*/
+}
